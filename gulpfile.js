@@ -1,14 +1,9 @@
 // generated on 2018-11-08 using generator-webapp-b4-php 3.0.1
-const connect = require('gulp-connect-php');
-const httpProxy = require('http-proxy');
+
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
-var browserSync = require( 'browser-sync' ).create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
-
-const $ = gulpLoadPlugins();
-const reload = browserSync.reload;
 
 gulp.task('styles', () => {
     return gulp.src('styles/*.scss')
