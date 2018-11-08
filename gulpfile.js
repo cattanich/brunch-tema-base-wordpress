@@ -89,29 +89,7 @@ gulp.task('fonts', () => {
         .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('extras', () => {
-    return gulp.src([
-        './**/*.*',
-        '!./*.html',
-        '!./scripts/**/*.js',
-        '!./styles/**/*.scss',
-        '!./styles/**/*.css',
-        '!./**/*.json',
-        '!./*.js',
-        '!./*.babelrc',
-        '!./*.bowerrc',
-        '!./*.editorconfig',
-        '!./*.gitignore',
-        '!./*.gitattributes',
-        '!bower_components/**/*.*',
-        '!node_modules/**/*.*'
 
-    ], {
-        dot: true
-    }).pipe(gulp.dest('dist'));
-});
-
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
     browserSync({
