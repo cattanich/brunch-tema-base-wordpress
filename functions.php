@@ -16,26 +16,17 @@ function bower_enqueue_assets() {
    * *************************************************************************/
 
   // bower:css
-  wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/css/bootstrap.css');
-  wp_enqueue_style('aos-css', get_stylesheet_directory_uri() . '/bower_components/aos/dist/aos.css');
-  wp_enqueue_style('fullpage-css', get_stylesheet_directory_uri() . '/bower_components/fullpage.js/dist/fullpage.css');
-  wp_enqueue_style('fontawesome-all-css', get_stylesheet_directory_uri() . '/bower_components/components-font-awesome/css/fontawesome-all.css');
-  wp_enqueue_style('hover-css', get_stylesheet_directory_uri() . '/bower_components/hover/css/hover.css');
-  wp_enqueue_style('animate-css', get_stylesheet_directory_uri() . '/bower_components/animate.css/animate.css');
-  // endbower
-  wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js');
-  // bower:js
-  wp_enqueue_script('popper-js', get_stylesheet_directory_uri() . '/bower_components/popper.js/dist/umd/popper.js');
-  wp_enqueue_script('modernizr-js', get_stylesheet_directory_uri() . '/bower_components/modernizr/modernizr.js');
-  wp_enqueue_script('aos-js', get_stylesheet_directory_uri() . '/bower_components/aos/dist/aos.js');
-  wp_enqueue_script('fullpage-js', get_stylesheet_directory_uri() . '/bower_components/fullpage.js/dist/fullpage.js');
   // endbower
   // build:css styles/main.css
   wp_enqueue_style('principal', get_stylesheet_directory_uri() . '/styles/main.css');
   // endbuild
+  // bower:js
+  // endbower
+  wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js', '', '', true);
     // build:js scripts/main.js
-  wp_enqueue_script('principal', get_stylesheet_directory_uri() . '/scripts/main.js');
+  wp_enqueue_script('principal', get_stylesheet_directory_uri() . '/scripts/main.js', '', '', true);
   // endbuild 
 }
 
 add_action('wp_enqueue_scripts', 'bower_enqueue_assets');
+

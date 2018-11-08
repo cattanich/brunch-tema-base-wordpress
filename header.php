@@ -8,5 +8,5 @@
   <title>webapp</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+	<?php wp_head() ?>
 </head>
