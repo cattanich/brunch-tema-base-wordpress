@@ -173,17 +173,32 @@ gulp.task('serve:test', ['scripts'], () => {
 
 // inject bower components
 gulp.task('wiredep', () => {
-  gulp.src('./styles/*.scss')
-    .pipe(wiredep({
-      ignorePath: /^(\.\.\/)+/
-    }))
-    .pipe(gulp.dest('./styles'));
 
-  gulp.src(['./*.html', './*.php'])
-    .pipe(wiredep({
-      ignorePath: /^(\.\.\/)*\.\./
-    }))
-    .pipe(gulp.dest('.'));
+gulp.src('functions.php')
+  .pipe(wiredep({
+    fileTypes: {
+      php: {
+        block: /(([ \t]*)\/\/\s*bower:*(\S*))(\n|\r|.)*?(\/\/\s*endbower)/gi,
+        detect: {
+          js: /script\(.*src=['"]([^'"]+)/gi,
+          css: /link\(.*href=['"]([^'"]+)/gi
+        },
+        replace: {
+          js: function(filePath){
+            var fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
+            var wpHandle = fileName.replace(".","-");
+            return "wp_enqueue_script('" + wpHandle + "', get_stylesheet_directory_uri() . '/" + filePath + "');";
+          },
+          css: function(filePath){
+            var fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
+            var wpHandle = fileName.replace(".","-");
+            return "wp_enqueue_style('" + wpHandle + "', get_stylesheet_directory_uri() . '/" + filePath + "');";
+          }
+        }
+      }
+    }
+  }))
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
