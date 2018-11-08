@@ -3,7 +3,7 @@ const connect = require('gulp-connect-php');
 const httpProxy = require('http-proxy');
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
-const browserSync = require('browser-sync');
+var browserSync = require( 'browser-sync' ).create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 
