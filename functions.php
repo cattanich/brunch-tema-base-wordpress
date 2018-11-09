@@ -15,17 +15,19 @@ function bower_enqueue_assets() {
    *         and `bower uninstall` and run `gulp wiredep` to update this.
    * *************************************************************************/
 
+  wp_enqueue_style('principal-css', get_stylesheet_directory_uri() . '/styles/principal.css');
+
   // bower:css
+
   // endbower
-  // build:css styles/main.css
-  wp_enqueue_style('principal', get_stylesheet_directory_uri() . '/styles/main.css');
-  // endbuild
+
   // bower:js
+
   // endbower
+
   wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js', '', '', true);
-    // build:js scripts/main.js
-  wp_enqueue_script('principal', get_stylesheet_directory_uri() . '/scripts/main.js', '', '', true);
-  // endbuild 
+  wp_enqueue_script('principal-js', get_stylesheet_directory_uri() . '/scripts/principal.js', '', '', true);
+
 }
 
 add_action('wp_enqueue_scripts', 'bower_enqueue_assets');
