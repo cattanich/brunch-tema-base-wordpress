@@ -1,6 +1,6 @@
 <?php
 /**
- * Understrap functions and definitions
+ * functions and definitions
  *
  * @package Go Galapagos
  */
