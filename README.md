@@ -1,6 +1,7 @@
-# Webapp-con-wp
-Tema WP starter
+# Tema base de wordpress
 
+
+# Instalación:
 ejecutar:
 npm install && bower install
 
