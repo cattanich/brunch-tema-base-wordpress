@@ -25,6 +25,7 @@ function bower_enqueue_assets() {
 
   // endbower
 
+  wp_enqueue_script('swipe-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js', '', '', true);
   wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js', '', '', true);
   wp_enqueue_script('principal-js', get_stylesheet_directory_uri() . '/scripts/principal.js', '', '', true);
 
@@ -32,3 +33,17 @@ function bower_enqueue_assets() {
 
 add_action('wp_enqueue_scripts', 'bower_enqueue_assets');
 
+
+// NAVWALKER
+require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+register_nav_menus( array(
+  'primary' => __( 'Primary Menu', 'menu_principal' ),
+) );
+
+// DEREGISTER NATIVE JQUERY
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", false, null);
+   wp_enqueue_script('jquery');
+}
