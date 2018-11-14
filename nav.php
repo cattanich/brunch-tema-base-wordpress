@@ -1,4 +1,5 @@
 
+
 <div class="navbar fixed-top navbar-expand-md parabg p-5">
   </div>
   <div class="collapse" id="collapseExample">
@@ -45,18 +46,19 @@
     </button>
     <div class="d-md-flex d-block w-100 bg-nav">
       <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="">
     <?php
     wp_nav_menu( array(
       'theme_location'    => 'primary',
-      'depth'             => 3,
       'container'         => 'div',
-      'container_class'   => 'collapse navbar-collapse',
-      'container_id'      => 'bs-example-navbar-collapse-1',
-      'menu_class'        => 'nav navbar-nav',
-      'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+      'container_class'   => 'navbar-collapse',
+      // 'container_id'      => 'bs-example-navbar-collapse-1',
+      'menu_class'        => 'navbar-nav',
+      // 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
       'walker'            => new WP_Bootstrap_Navwalker(),
     ) );
     ?>
+  </div>
+  </div>
   </div>
 </nav>
