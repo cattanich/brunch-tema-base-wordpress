@@ -14,7 +14,7 @@ setlocale(LC_MONETARY, 'en_US' );
 // Soporte de Wordpress y demas utilidades
 // require_once 'inc/gogalapagos-utilities.php'; 
 // Ajustes de plugins, tamaños de imagenes
-require_once 'inc/gogalapagos-extras.php'; 
+// require_once 'inc/gogalapagos-extras.php'; 
 // Soporte para Menues
 // require_once 'includes/gogalapagos-menues.php';
 // require_once 'includes/gogalapagos-menu-walker.php';
@@ -39,6 +39,8 @@ function bower_enqueue_assets() {
   wp_enqueue_style('hover-css', get_stylesheet_directory_uri() . '/bower_components/hover/css/hover.css');
   wp_enqueue_style('animate-css', get_stylesheet_directory_uri() . '/bower_components/animate.css/animate.css');
   wp_enqueue_style('slick-css', get_stylesheet_directory_uri() . '/bower_components/slick-carousel/slick/slick.css');
+  wp_enqueue_style('owl-carousel.css', get_stylesheet_directory_uri() . '/bower_components/owl.carousel/dist/assets/owl.carousel.css');
+  wp_enqueue_style('owl-theme.default.css', get_stylesheet_directory_uri() . '/bower_components/owl.carousel/dist/assets/owl.theme.default.css');
   // endbower
 
   if(is_front_page() ){
@@ -55,6 +57,7 @@ function bower_enqueue_assets() {
   wp_enqueue_script('jquery-js', get_stylesheet_directory_uri() . '/bower_components/jquery/dist/jquery.js', '', '', true);
   wp_enqueue_script('slick-js', get_stylesheet_directory_uri() . '/bower_components/slick-carousel/slick/slick.js', '', '', true);
   wp_enqueue_script('progressbar-js', get_stylesheet_directory_uri() . '/bower_components/progressbar.js/dist/progressbar.js', '', '', true);
+  wp_enqueue_script('owl-carousel.js', get_stylesheet_directory_uri() . '/bower_components/owl.carousel/dist/owl.carousel.js', '', '', true);
   // endbower
 
   wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.js', '', '', true);
