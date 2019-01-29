@@ -11,19 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 setlocale(LC_MONETARY, 'en_US' );
 
-// Soporte de Wordpress y demas utilidades
-// require_once 'inc/gogalapagos-utilities.php'; 
-// Ajustes de plugins, tamaños de imagenes
-// require_once 'inc/gogalapagos-extras.php'; 
-// Soporte para Menues
-// require_once 'includes/gogalapagos-menues.php';
-// require_once 'includes/gogalapagos-menu-walker.php';
-// Carga de scripts y adicionales
-// require_once 'includes/gogalapagos-scripts.php';
-// Traducciones
-// require_once 'inc/gogalapagos-string-translations.php'; 
-// Soporte para llamados de AJAX
-// require_once 'inc/gogalapagos-ajax-calls.php';
 
 // DEREGISTER NATIVE JQUERY
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 10);
