@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "repository": "https://github.com/cattanich/tema-base-wordpress.git",
-  "author": "Christian <web@kleintours.com.ec>",
+  "author": "Christian <cattanich@digicatt.com.ec>",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.3.1",
