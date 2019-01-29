@@ -21,6 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./scripts/sitio.js --hmr-hostname localhost/wordpress",
+    "watch": "parcel --log-level 4 watch ./scripts/sitio.js",
     "build": "parcel --log-level 4 build ./scripts/sitio.js"
   }
 }
