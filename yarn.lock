@@ -5711,6 +5711,11 @@ sax@^1.2.4, sax@~1.2.1, sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
+scrollify@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/scrollify/-/scrollify-1.0.0.tgz#7fc9466ba40063a459d0e8e45f2dfe51f0eaffe9"
+  integrity sha1-f8lGa6QAY6RZ0OjkXy3+UfDq/+k=
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"

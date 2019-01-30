@@ -16,7 +16,7 @@ setlocale(LC_MONETARY, 'en_US' );
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 10);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
-   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", false, null);
+   wp_register_script('jquery', get_stylesheet_directory_uri() . '/bootstrap/jquery.js', false, null);
    wp_enqueue_script('jquery');
 }
 
@@ -28,8 +28,8 @@ function bower_enqueue_assets() {
 
 
 
-  wp_enqueue_style('styles-bundle', get_template_directory_uri() . '/dist/sitio.css');
-  wp_enqueue_script('parcel-bundle', get_template_directory_uri() . '/dist/sitio.js', '', '', true);
+  wp_enqueue_style('styles-bundle', get_stylesheet_directory_uri() . '/dist/sitio.css');
+  wp_enqueue_script('parcel-bundle', get_stylesheet_directory_uri() . '/dist/sitio.js', '', '', true);
 
 
   // if(is_front_page() ){

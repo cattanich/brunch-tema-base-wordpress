@@ -1,17 +1,15 @@
 ///// JS
-// import jquery from "jquery";
-// export default (window.$ = window.jQuery = jquery);
+import jquery from 'jquery';
 import bootstrap from 'bootstrap';
+import Scrollify from 'scrollify';
+import responsiveSlides from 'responsiveslides';
+import AOS from 'aos';
 
 ///// CSS & SCSS
 import '../styles/sitio.scss';
 
 ///// SCRIPTS
-console.log('hello world');
-$('a').tooltip({ placement: 'left' });
-$(function() {
-    $('[data-toggle="popover"]').popover()
-});
+console.log('\'Made by: \'@cattanich');
 
 AOS.init();
 
