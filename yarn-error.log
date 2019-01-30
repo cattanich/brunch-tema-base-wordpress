@@ -2,7 +2,7 @@ Arguments:
   /usr/local/Cellar/node@10/10.15.0/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js add responsiveslides
 
 PATH: 
-  /var/folders/7t/v7nvdxf95xg4b96th3k8qnhr0000gp/T/yarn--1548801072563-0.5438245101902393:/usr/local/var/www/wpnewparcel/wp-content/themes/tema-base-wordpress/node_modules/.bin:/Users/webmaster/.config/yarn/link/node_modules/.bin:/usr/local/var/www/wpnewparcel/wp-content/themes/tema-base-wordpress/node_modules/.bin:/Users/webmaster/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node@10/10.15.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.15.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.15.0/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.15.0/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/node@10/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  /var/folders/7t/v7nvdxf95xg4b96th3k8qnhr0000gp/T/yarn--1548856720596-0.37624488289159785:/usr/local/var/www/wpnewparcel/wp-content/themes/tema-base-wordpress/node_modules/.bin:/Users/webmaster/.config/yarn/link/node_modules/.bin:/usr/local/var/www/wpnewparcel/wp-content/themes/tema-base-wordpress/node_modules/.bin:/Users/webmaster/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node@10/10.15.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.15.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.15.0/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.15.0/bin:/usr/local/opt/php@7.2/sbin:/usr/local/opt/php@7.2/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/node@10/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 Yarn version: 
   1.13.0
