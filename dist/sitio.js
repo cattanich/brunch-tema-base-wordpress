@@ -18495,32 +18495,45 @@ function disable() {
 //     $('[data-toggle="popover"]').popover()
 // });
 // AOS.init();
-// $("#fakeLoader").fakeLoader({
-//     timeToHide: 2000, //Time in milliseconds for fakeLoader disappear
-//     zIndex: 1001, // Default zIndex
-//     spinner: "", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-//     bgColor: "white", //Hex, RGB or RGBA colors
-//     imagePath: "" + templateUrl + "/images/dg_logo.png" //If you want can you insert your custom image
-//     // imagePath:""+templateUrl+"/assets/SVG-Loaders/svg-loaders/puff.svg" //If you want can you insert your custom image
-// });
-// $("#intro-fixed").responsiveSlides({
-//     auto: true,
-//     pager: false,
-//     speed: 4500,
-//     timeout: 5000
-// });
-// $('#search').on('show.bs.collapse', function() { $('.esconder').addClass('d-none'); });
-// $('#diss').click(function() { $('.esconder').removeClass('d-none'); });
-// $('#diss2').click(function() { $('.esconder').removeClass('d-none'); });
-// $(window).scroll(function() {
-//     // 100 = The point you would like to fade the nav in.
-//     if ($(window).scrollTop() > 100) {
-//         $('.parabg').addClass('bg-dark2');
-//     } else {
-//         $('.parabg').removeClass('bg-dark2');
-//     };
-// });
-// $.scrollify({
+
+$("#fakeLoader").fakeLoader({
+  timeToHide: 2000,
+  //Time in milliseconds for fakeLoader disappear
+  zIndex: 1001,
+  // Default zIndex
+  spinner: "",
+  //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+  bgColor: "white",
+  //Hex, RGB or RGBA colors
+  imagePath: "" + templateUrl + "/images/dg_logo.png" //If you want can you insert your custom image
+  // imagePath:""+templateUrl+"/assets/SVG-Loaders/svg-loaders/puff.svg" //If you want can you insert your custom image
+
+});
+$("#intro-fixed").responsiveSlides({
+  auto: true,
+  pager: false,
+  speed: 4500,
+  timeout: 5000
+});
+$('#search').on('show.bs.collapse', function () {
+  $('.esconder').addClass('d-none');
+});
+$('#diss').click(function () {
+  $('.esconder').removeClass('d-none');
+});
+$('#diss2').click(function () {
+  $('.esconder').removeClass('d-none');
+});
+$(window).scroll(function () {
+  // 100 = The point you would like to fade the nav in.
+  if ($(window).scrollTop() > 100) {
+    $('.parabg').addClass('bg-dark2');
+  } else {
+    $('.parabg').removeClass('bg-dark2');
+  }
+
+  ;
+}); // $.scrollify({
 //     section: ".section",
 //     sectionName: "section-name",
 //     interstitialSection: '.off-height',
@@ -18534,29 +18547,31 @@ function disable() {
 //     updateHash: true,
 //     touchScroll: true
 // });
-// $(".somos").on('click', function(event) {
-//     $.scrollify.move("#somos");
-// });
-// $(document).ready(function() {
-//     var myElement = $('#logo').find('img');
-//     $(window).on('scroll', function() {
-//         var st = $(this).scrollTop();
-//         myElement.css({
-//             'opacity': 1 - st / 200
-//         });
-//     });
-// });
-// $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-//     if (!$(this).next().hasClass('show')) {
-//         $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-//     }
-//     var $subMenu = $(this).next('.dropdown-menu');
-//     $subMenu.toggleClass('show');
-//     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-//         $('.dropdown-submenu .show').removeClass('show');
-//     });
-//     return false;
-// })
+
+$(".somos").on('click', function (event) {
+  $.scrollify.move("#somos");
+});
+$(document).ready(function () {
+  var myElement = $('#logo').find('img');
+  $(window).on('scroll', function () {
+    var st = $(this).scrollTop();
+    myElement.css({
+      'opacity': 1 - st / 200
+    });
+  });
+});
+$('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+  if (!$(this).next().hasClass('show')) {
+    $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+  }
+
+  var $subMenu = $(this).next('.dropdown-menu');
+  $subMenu.toggleClass('show');
+  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+    $('.dropdown-submenu .show').removeClass('show');
+  });
+  return false;
+});
 },{"jquery":"../node_modules/jquery/dist/jquery.js","bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.js","aos":"../node_modules/aos/dist/aos.js","jquery-scrollify":"../node_modules/jquery-scrollify/jquery.scrollify.js","../styles/sitio.scss":"../styles/sitio.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -18584,7 +18599,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59414" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59788" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
