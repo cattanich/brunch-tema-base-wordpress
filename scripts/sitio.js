@@ -10,6 +10,7 @@ import '../styles/sitio.scss';
 console.log('hello world')
 
 
+
 AOS.init();
 
 $.scrollify({
@@ -27,9 +28,16 @@ $.scrollify({
     touchScroll: true
 });
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+
+export function disable() {
+    $.scrollify.destroy();
+};
+
+
+
+// // $(function() {
+//     $('[data-toggle="tooltip"]').tooltip();
+// // });
 
 // ///// CSS & SCSS
 // import '../styles/sitio.scss';

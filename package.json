@@ -10,15 +10,16 @@
     "ResponsiveSlides.js": "https://github.com/cattanich/ResponsiveSlides.js.git",
     "animate.css": "^3.7.0",
     "aos": "^2.3.4",
+    "bootstrap": "^4.2.1",
     "components-font-awesome": "^5.4.2",
     "fakeLoader.js": "https://github.com/cattanich/fakeLoader.js.git",
     "hover": "^3.0.0-alpha.6",
     "jquery": "^3.3.1",
     "jquery-scrollify": "^1.0.19",
     "jquery-touchswipe": "^1.6.19",
-    "bootstrap": "^4.2.1",
-    "popper.js": "^1.14.7",
-    "jssocials": "^1.5.0"
+    "jssocials": "^1.5.0",
+    "parcel-plugin-inliner": "^1.0.2",
+    "popper.js": "^1.14.7"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
@@ -28,7 +29,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./scripts/sitio.js --hmr-hostname localhost",
-    "watch": "parcel watch ./scripts/sitio.js --no-cache --no-source-maps --log-level 4",
+    "watch": "parcel watch ./scripts/sitio.js --global foo --no-cache --no-source-maps --log-level 4",
     "build": "parcel build ./scripts/sitio.js --no-cache --no-source-maps --log-level 4"
   }
 }

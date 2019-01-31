@@ -18438,6 +18438,11 @@ module.hot.accept(reloadCSS);
 },{"./../images/dg_logo.png":[["dg_logo.4ddfee99.png","../images/dg_logo.png"],"../images/dg_logo.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"sitio.js":[function(require,module,exports) {
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.disable = disable;
+
 var _bootstrap = _interopRequireDefault(require("bootstrap"));
 
 var _aos = _interopRequireDefault(require("aos"));
@@ -18469,9 +18474,15 @@ $.scrollify({
   updateHash: true,
   touchScroll: true
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-}); // ///// CSS & SCSS
+
+function disable() {
+  $.scrollify.destroy();
+}
+
+; // // $(function() {
+//     $('[data-toggle="tooltip"]').tooltip();
+// // });
+// ///// CSS & SCSS
 // import '../styles/sitio.scss';
 // ///// JS
 // import jquery from "jquery-commonjs";
@@ -18573,7 +18584,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56339" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59414" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -18715,4 +18726,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","sitio.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","sitio.js"], "foo")
