@@ -1,8 +1,8 @@
 const $ = require('jquery');
 import bootstrap from "bootstrap";
 import AOS from "aos";
+import responsiveSlides from "ResponsiveSlides.js";
 const scrollify = require('jquery-scrollify');
-// import scrollify from "jquery-scrollify";
 import '../styles/sitio.scss';
 
 
