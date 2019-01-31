@@ -14,7 +14,6 @@
     "fakeLoader.js": "https://github.com/cattanich/fakeLoader.js.git",
     "hover": "^3.0.0-alpha.6",
     "jquery": "^3.3.1",
-    "jquery-commonjs": "^1.7.3",
     "jquery-scrollify": "^1.0.19",
     "jquery-touchswipe": "^1.6.19",
     "bootstrap": "^4.2.1",

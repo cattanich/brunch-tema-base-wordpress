@@ -3101,11 +3101,6 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-jquery-commonjs@^1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/jquery-commonjs/-/jquery-commonjs-1.7.3.tgz#7f6e6a442a40fc0a4d40eb29110d7a2fe9f92f1f"
-  integrity sha1-f25qRCpA/ApNQOspEQ16L+n5Lx8=
-
 jquery-scrollify@^1.0.19:
   version "1.0.19"
   resolved "https://registry.yarnpkg.com/jquery-scrollify/-/jquery-scrollify-1.0.19.tgz#442dfa6188639ee0bdc4d60ea580347b31f9256b"
