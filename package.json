@@ -1,0 +1,35 @@
+{
+  "name": "tema-base-wordpress",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./scripts/sitio.js",
+  "repository": "https://github.com/cattanich/tema-base-wordpress.git",
+  "author": "Christian <cattanich@digicatt.com.ec>",
+  "license": "MIT",
+  "dependencies": {
+    "ResponsiveSlides.js": "https://github.com/cattanich/ResponsiveSlides.js.git",
+    "animate.css": "^3.7.0",
+    "aos": "^2.3.4",
+    "components-font-awesome": "^5.4.2",
+    "fakeLoader.js": "https://github.com/cattanich/fakeLoader.js.git",
+    "hover": "^3.0.0-alpha.6",
+    "jquery": "^3.3.1",
+    "jquery-commonjs": "^1.7.3",
+    "jquery-scrollify": "^1.0.19",
+    "jquery-touchswipe": "^1.6.19",
+    "jssocials": "^1.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "bootstrap": "^4.2.1",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.5.0",
+    "popper.js": "^1.14.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./scripts/sitio.js --hmr-hostname localhost",
+    "watch": "parcel watch ./scripts/sitio.js --no-cache --no-source-maps --log-level 4",
+    "build": "parcel build ./scripts/sitio.js --no-cache --no-source-maps --log-level 4"
+  }
+}
