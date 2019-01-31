@@ -713,8 +713,8 @@
   integrity sha512-41qEJgBH/TWgo5NFSvBCJ1qkoi3Q6ONSF2avrHq1LVEZfYpdHmj0y9SuTK+u9ZhG1sYQKBL1AWXKyLWP4RaUoQ==
 
 "ResponsiveSlides.js@https://github.com/cattanich/ResponsiveSlides.js.git":
-  version "0.0.0"
-  resolved "https://github.com/cattanich/ResponsiveSlides.js.git#c554360ea9a47ed9785e871c54d72e7724a70cd7"
+  version "1.0.0"
+  resolved "https://github.com/cattanich/ResponsiveSlides.js.git#904e14b875093cdcf189c799e34f21018e9d22a2"
 
 abbrev@1:
   version "1.1.1"
