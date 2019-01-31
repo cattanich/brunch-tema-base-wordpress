@@ -17,14 +17,14 @@
     "jquery-commonjs": "^1.7.3",
     "jquery-scrollify": "^1.0.19",
     "jquery-touchswipe": "^1.6.19",
+    "bootstrap": "^4.2.1",
+    "popper.js": "^1.14.7",
     "jssocials": "^1.5.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
-    "bootstrap": "^4.2.1",
     "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.5.0",
-    "popper.js": "^1.14.7"
+    "parcel-bundler": "^1.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
