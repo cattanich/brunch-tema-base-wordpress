@@ -6,33 +6,41 @@
 // };
 
 module.exports = {
-paths: {
-  public: '.'
-},
-files: {
-  javascripts: {
-    joinTo: {
-      'scripts/sitio.js': /^app/,
-      'scripts/vendor.js': /^(?!app)/
+    paths: {
+        public: '.'
+    },
+    files: {
+        javascripts: {
+            joinTo: {
+                'scripts/sitio.js': /^app/,
+                'scripts/vendor.js': /^(?!app)/
+            }
+        },
+        stylesheets: {
+            joinTo: 'styles/sitio.css'
+        }
+    },
+    modules: {
+        autoRequire: {
+            // outputFileName : [ entryModule ]
+            'scripts/sitio.js': ['initialize']
+        }
+    },
+    plugins: {
+        postcss: {
+            processors: [
+                require('autoprefixer')(['last 8 versions']),
+            ]
+        }
     }
-  },
-  stylesheets: {
-    joinTo: 'styles/sitio.css'
-  }
-},
-  modules: {
-    autoRequire: {
-      // outputFileName : [ entryModule ]
-      'scripts/sitio.js': ['initialize']
-    }
- }
+    // ,
+    // npm: {
+    //   enabled: true,
+    //         globals: {
+    //           $: 'jquery'
+    //           // scrollify: 'jquery-scrollify'
+
+    //         }
+    //     }
+
 };
-
-exports.plugins = {
-  babel: {presets: ['latest']},
-  postcss: {processors: [require('autoprefixer')]}
-};
-
-
-
-

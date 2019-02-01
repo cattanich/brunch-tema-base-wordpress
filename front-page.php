@@ -128,6 +128,8 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	</div>
 </div>
 <?php get_footer(); ?>
-
+<!-- <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+$.scrollify.destroy()
+});</script> -->
 <!-- <script type="text/javascript">$.scrollify.destroy()</script> -->
-<script type="text/javascript">$.scrollify.disable()</script>
+<!-- <script type="text/javascript">$.scrollify.disable()</script> -->
