@@ -29,7 +29,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./scripts/sitio.js --hmr-hostname localhost",
-    "watch": "parcel watch ./scripts/sitio.js --global foo --no-cache --no-source-maps --log-level 4",
+    "watch": "parcel watch ./scripts/sitio.js --no-cache --no-autoinstall --no-source-maps --log-level 4",
     "build": "parcel build ./scripts/sitio.js --no-cache --no-source-maps --log-level 4"
   }
 }

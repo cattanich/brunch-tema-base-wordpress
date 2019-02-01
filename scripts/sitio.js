@@ -2,8 +2,9 @@ const $ = require('jquery');
 const scrollify = require('jquery-scrollify');
 import bootstrap from "bootstrap";
 import AOS from "aos";
-import responsiveSlides from "ResponsiveSlides.js";
-import fakeLoader from "fakeLoader.js/fakeLoader.js";
+const responsiveSlides = require('ResponsiveSlides.js');
+// import responsiveSlides from "ResponsiveSlides.js";
+// import fakeLoader from "fakeLoader.js";
 import '../styles/sitio.scss';
 
 
@@ -60,17 +61,17 @@ export function disable() {
 
 // AOS.init();
 
-$("#fakeLoader").fakeLoader({
+// $("#fakeLoader").fakeLoader({
 
-    timeToHide: 2000, //Time in milliseconds for fakeLoader disappear
-    zIndex: 1001, // Default zIndex
-    spinner: "", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-    bgColor: "white", //Hex, RGB or RGBA colors
-    imagePath: "" + templateUrl + "/images/dg_logo.png" //If you want can you insert your custom image
-    // imagePath:""+templateUrl+"/assets/SVG-Loaders/svg-loaders/puff.svg" //If you want can you insert your custom image
+//     timeToHide: 2000, //Time in milliseconds for fakeLoader disappear
+//     zIndex: 1001, // Default zIndex
+//     spinner: "", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+//     bgColor: "white", //Hex, RGB or RGBA colors
+//     imagePath: "" + templateUrl + "/images/dg_logo.png" //If you want can you insert your custom image
+//     // imagePath:""+templateUrl+"/assets/SVG-Loaders/svg-loaders/puff.svg" //If you want can you insert your custom image
 
 
-});
+// });
 
 $("#intro-fixed").responsiveSlides({
     auto: true,

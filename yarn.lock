@@ -2452,8 +2452,8 @@ extsprintf@^1.2.0:
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
 "fakeLoader.js@https://github.com/cattanich/fakeLoader.js.git":
-  version "0.0.0"
-  resolved "https://github.com/cattanich/fakeLoader.js.git#3e681e62f9779230efcdf7baf1f9b059f8ee35cd"
+  version "1.0.0"
+  resolved "https://github.com/cattanich/fakeLoader.js.git#48bc0836bb27e7d84208c6beb086eeaa6641bc87"
 
 falafel@^2.1.0:
   version "2.1.0"
