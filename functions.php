@@ -28,8 +28,9 @@ function bower_enqueue_assets() {
 
 
 
-  wp_enqueue_style('styles-bundle', get_stylesheet_directory_uri() . '/dist/sitio.css');
-  wp_enqueue_script('parcel-bundle', get_stylesheet_directory_uri() . '/dist/sitio.js', '', '', true);
+  wp_enqueue_style('styles-bundle', get_stylesheet_directory_uri() . '/styles/sitio.css');
+  wp_enqueue_script('vendor-bundle', get_stylesheet_directory_uri() . '/scripts/vendor.js', '', '', true);
+  wp_enqueue_script('custom-bundle', get_stylesheet_directory_uri() . '/scripts/sitio.js', '', '', true);
   // wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.bundle.js', '', '', true);
   //   wp_enqueue_script('scrollify', get_stylesheet_directory_uri() . '/node_modules/scrollify/scrollify.js', '', '', true);
 
