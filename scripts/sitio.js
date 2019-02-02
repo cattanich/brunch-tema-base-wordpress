@@ -151,6 +151,8 @@ var __makeRelativeRequire = function(require, mappings, pref) {
 require.register("initialize.js", function(exports, require, module) {
 // ///// CSS & SCSS
 // import 'slick/';
+// import '../styles/sitio.scss';
+// import 'slick-carousel/slick/slick.css'
 
 const $ = require('jquery');
 

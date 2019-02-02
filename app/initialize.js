@@ -1,5 +1,7 @@
 // ///// CSS & SCSS
 // import 'slick/';
+// import '../styles/sitio.scss';
+// import 'slick-carousel/slick/slick.css'
 
 const $ = require('jquery');
 

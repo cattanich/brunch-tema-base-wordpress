@@ -9,6 +9,11 @@ module.exports = {
     paths: {
         public: '.'
     },
+    // npm: {
+    //     styles: {
+    //         slick: ["slick/slick.css"]
+    //     },
+    // },
     files: {
         javascripts: {
             joinTo: {
@@ -17,8 +22,13 @@ module.exports = {
             }
         },
         stylesheets: {
-            joinTo: 'styles/sitio.css',
-        }
+            joinTo: {
+                // "styles/sitio.css": /^app/,
+                // "styles/vendor.css": /^(?!app)/
+                "styles/sitio.css": /sitio.scss/,
+                "styles/vendor.css": /vendor.scss/
+            }
+        },
     },
     modules: {
         autoRequire: {
@@ -31,21 +41,11 @@ module.exports = {
             processors: [
                 require('autoprefixer')(['last 8 versions']),
             ]
+        },
+        css: {
+            modules: true
         }
     }
-//     ,
-// npm: {styles: {
-//     pikaday: ['css/pikaday.css']
-//   }
-// }
-    // ,
-    // npm: {
-    //   enabled: true,
-    //         globals: {
-    //           $: 'jquery'
-    //           // scrollify: 'jquery-scrollify'
 
-    //         }
-    //     }
 
 };
