@@ -149,14 +149,17 @@ var __makeRelativeRequire = function(require, mappings, pref) {
   }
 };
 require.register("initialize.js", function(exports, require, module) {
+// ///// CSS & SCSS
+// import 'slick/';
+
 const $ = require('jquery');
+
 var bootstrap = require('bootstrap');
 var AOS = require('aos');
 var scrollify = require('jquery-scrollify');
-// var responsiveSlides = require('ResponsiveSlides.js');
+var slick = require('slick-carousel');
 
-
-
+// window.jQuery = $;
 
 
 
@@ -191,8 +194,7 @@ $.scrollify({
 //     $('[data-toggle="tooltip"]').tooltip();
 // // });
 
-// ///// CSS & SCSS
-// import '../styles/sitio.scss';
+
 
 // ///// JS
 // import jquery from "jquery-commonjs";
@@ -229,6 +231,16 @@ $.scrollify({
 //     speed: 4500,
 //     timeout: 5000
 // });
+
+
+
+$('#intro-fixed').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
 
 $('#search').on('show.bs.collapse', function() { $('.esconder').addClass('d-none'); });
 $('#diss').click(function() { $('.esconder').removeClass('d-none'); });

@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "build": "brunch build --production "
   },
   "dependencies": {
     "ResponsiveSlides.js": "https://github.com/cattanich/ResponsiveSlides.js.git",
@@ -15,7 +15,8 @@
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "jquery-scrollify": "^1.0.19",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",

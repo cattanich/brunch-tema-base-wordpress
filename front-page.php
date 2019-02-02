@@ -17,13 +17,27 @@ $servicios = get_posts($args);
 $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 ?>
 <!-- INTRO FIXED POSITION -->
-<ul id="intro-fixed" class="position-fixed h-100" style="z-index: -1">
+<!-- <ul id="intro-fixed" class="position-fixed h-100" style="z-index: -1">
 	<?php
 	foreach ($img_front as $imgs0 ) {
 	?>
 	<li class="h-100" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.9) 100%),url(<?= wp_get_attachment_url( $imgs0 ) ?>); background-position: center top; background-repeat: no-repeat;"></li>
 	<?php } ?>
-</ul>
+</ul> -->
+
+<!-- INTRO FIXED POSITION -->
+<div id="intro-fixed" data-slick='' class="position-fixed h-100" style="z-index: -1">
+	<?php
+	foreach ($img_front as $imgs0 ) {
+	?>
+	<div class="h-100" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.9) 100%),url(<?= wp_get_attachment_url( $imgs0 ) ?>); background-position: center top; background-repeat: no-repeat;"></div>
+	<?php } ?>
+</div>
+
+<!-- <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+  <div><h3>1</h3></div>
+</div> -->
+
 <!-- INTRO SECTION -->
 <div id="intro" class="section off-scroll" data-section-name="inicio">
 	<div class="p-4"></div>
@@ -108,7 +122,7 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	</div>
 </div>
 <!-- SECTION -->
-<div class="section off-scroll" data-section-name="somos">
+<div class="section off-scroll off-height" data-section-name="somos">
 	<div class="p-5"></div>
 	<div class="container bg-white mt-5">
 		<h1 class="mx-3 text-center titulos py-3 bg-secondary border border-gray"><?= the_title( '', '', true );  ?></h1>
@@ -128,8 +142,5 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	</div>
 </div>
 <?php get_footer(); ?>
-<!-- <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
-$.scrollify.destroy()
-});</script> -->
 <!-- <script type="text/javascript">$.scrollify.destroy()</script> -->
 <!-- <script type="text/javascript">$.scrollify.disable()</script> -->

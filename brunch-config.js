@@ -17,7 +17,7 @@ module.exports = {
             }
         },
         stylesheets: {
-            joinTo: 'styles/sitio.css'
+            joinTo: 'styles/sitio.css',
         }
     },
     modules: {
@@ -33,6 +33,11 @@ module.exports = {
             ]
         }
     }
+//     ,
+// npm: {styles: {
+//     pikaday: ['css/pikaday.css']
+//   }
+// }
     // ,
     // npm: {
     //   enabled: true,
