@@ -191,11 +191,7 @@ $.scrollify({
     touchScroll: true
 });
 
-// $('.section').trigger(
-// $.scrollify.disable()
-// );
-
-  $("#intro", function(){ 
+  $(".off-scroll", function(){ 
   $.scrollify.disable()
 });  
 
@@ -260,12 +256,12 @@ $.scrollify({
 $('#intro-fixed').slick({
 centerMode:true,
     // slidesToShow: 1,
-    // slidesToScroll: 1,
+    // slidesToScroll: 3,
     dots: false,
     arrows: false,
     infinite: true,
-    fade: true,
-    // autoplay: true,
+    // fade: true,
+    autoplay: true,
     cssEase: 'linear',
     variableWidth: true,
     variableHeight: true
