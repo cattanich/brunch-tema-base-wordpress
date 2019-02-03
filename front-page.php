@@ -30,7 +30,10 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	<?php
 	foreach ($img_front as $imgs0 ) {
 	?>
-	<div class="h-100" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.9) 100%),url(<?= wp_get_attachment_url( $imgs0 ) ?>); background-position: center top; background-repeat: no-repeat;"></div>
+	<div class="h-100" style="">
+		<img src="<?= wp_get_attachment_url( $imgs0 ) ?>">
+
+	</div>
 	<?php } ?>
 </div>
 
@@ -39,7 +42,7 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 </div> -->
 
 <!-- INTRO SECTION -->
-<div id="intro" class="section off-scroll" data-section-name="inicio">
+<div id="intro" class="section off-scroll">
 	<div class="p-4"></div>
 	<div class="container h-100">
 		<div class="row no-gutters align-items-center h-100 border-bottom-0 text-white">
@@ -61,7 +64,7 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	
 </div>
 <!-- SECTION -->
-<div class="section off-scroll off-height" data-section-name="servicios">
+<div class="section off-scroll off-height">
 	<div class="p-5"></div>
 	<div class="container bg-white mt-5">
 		<h1 class="mx-3 text-center titulos py-3 bg-secondary border border-gray">Servicios</h1>
@@ -122,7 +125,7 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	</div>
 </div>
 <!-- SECTION -->
-<div class="section off-scroll off-height" data-section-name="somos">
+<div class="section off-scroll off-height">
 	<div class="p-5"></div>
 	<div class="container bg-white mt-5">
 		<h1 class="mx-3 text-center titulos py-3 bg-secondary border border-gray"><?= the_title( '', '', true );  ?></h1>
@@ -135,12 +138,12 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	</div>
 </div>
 <!-- SECTION -->
-<div class="section off-scroll" data-section-name="4">
+<div class="section off-scroll">
 	<div class="p-5"></div>
 	<div class="container bg-primary mt-5">
 		seccion 3
 	</div>
 </div>
 <?php get_footer(); ?>
-<!-- <script type="text/javascript">$.scrollify.destroy()</script> -->
+<script type="text/javascript">$.scrollify.destroy()</script>
 <!-- <script type="text/javascript">$.scrollify.disable()</script> -->

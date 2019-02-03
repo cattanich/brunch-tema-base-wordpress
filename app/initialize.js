@@ -27,7 +27,7 @@ AOS.init();
 
 $.scrollify({
     section: ".section",
-    // sectionName: "section-name",
+    sectionName: "section-name",
     interstitialSection: '.off-height',
     easing: "easeOutExpo",
     scrollSpeed: 1100,
@@ -85,12 +85,32 @@ $.scrollify({
 
 
 
+// $('#intro-fixed').slick({
+//   dots: false,
+//   infinite: true,
+//   speed: 500,
+//   fade: true,
+//   // autoplay: true,
+//   cssEase: 'linear',
+//   arrows: false
+
+
+
+// });
+
+
 $('#intro-fixed').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
+centerMode:true,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    fade: true,
+    // autoplay: true,
+    cssEase: 'linear',
+    variableWidth: true,
+    variableHeight: true
 });
 
 $('#search').on('show.bs.collapse', function() { $('.esconder').addClass('d-none'); });
