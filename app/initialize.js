@@ -40,6 +40,13 @@ $.scrollify({
     touchScroll: true
 });
 
+// $('.section').trigger(
+// $.scrollify.disable()
+// );
+
+  $("#intro", function(){ 
+  $.scrollify.disable()
+});  
 
 // // $(function() {
 //     $('[data-toggle="tooltip"]').tooltip();
