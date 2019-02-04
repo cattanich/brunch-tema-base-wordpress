@@ -23,6 +23,7 @@
     "auto-reload-brunch": "^2",
     "autoprefixer": "^9.4.7",
     "brunch": "^2",
+    "clean-css-brunch": "^2.10.0",
     "postcss-brunch": "^2.10.1",
     "postcss-scss": "^2.0.0",
     "sass-brunch": "^2.10.8",

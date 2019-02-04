@@ -41,9 +41,13 @@ module.exports = {
             options: {
                 parser: require('postcss-scss'),
             },
-            processors: [
+            processors: 
                 require('autoprefixer')(['last 5 versions']),
-            ]
+
+        },
+        cleancss: {
+            specialComments: 0,
+            removeEmpty: true
         },
         css: {
             modules: true
