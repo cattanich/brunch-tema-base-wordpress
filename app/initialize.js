@@ -8,7 +8,7 @@ const $ = require('jquery');
 var bootstrap = require('bootstrap');
 var AOS = require('aos');
 var scrollify = require('jquery-scrollify');
-var slick = require('slick-carousel');
+// var slick = require('slick-carousel');
 
 // window.jQuery = $;
 
