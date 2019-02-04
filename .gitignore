@@ -34,4 +34,5 @@ tmp/
 
 # Brunch output folder.
 public/
-
+scripts/
+styles/
