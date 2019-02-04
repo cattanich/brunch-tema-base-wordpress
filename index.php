@@ -13,4 +13,3 @@ if ( !defined( 'ABSPATH' ) ) {
 
 
 <?php get_footer(); ?>
-<script type="text/javascript">fullpage_api.destroy('all');</script>
