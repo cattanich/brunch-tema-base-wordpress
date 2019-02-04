@@ -17,50 +17,19 @@ $servicios = get_posts($args);
 $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 ?>
 <!-- INTRO FIXED POSITION -->
-<!-- <ul id="intro-fixed" class="position-fixed h-100" style="z-index: -1">
-	<?php
-	foreach ($img_front as $imgs0 ) {
-	?>
-	<li class="h-100" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.9) 100%),url(<?= wp_get_attachment_url( $imgs0 ) ?>); background-position: center top; background-repeat: no-repeat;"></li>
-	<?php } ?>
-</ul> -->
-
-<!-- INTRO FIXED POSITION -->
-<!-- <div id="intro-fixed" class="position-fixed background-cover" style="z-index: -1">
-	<?php
-	foreach ($img_front as $imgs0 ) {
-	?>
-	<div class="slide" style="background-image: url(<?= wp_get_attachment_url( $imgs0 ) ?>);">
-
-
-	</div>
-	<?php } ?>
-</div> -->
-
-
 <div id="intro-fixed" class="carousel slide carousel-fade" style="z-index: -1" >
 	<div class="carousel-inner position-fixed " role="listbox">
 		<?php
 		$count = 0;
-	foreach ($img_front as $imgs0 ) {
+		foreach ($img_front as $imgs0 ) {
 		$count++;
-	?>
-	<div class="carousel-item <?php if ($count == 1) {echo "active"; }  ?>" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.9) 100%),url(<?= wp_get_attachment_url( $imgs0 ) ?>)">
-
-
-	</div>
-	<?php } ?>
-		
+		?>
+		<div class="carousel-item <?php if ($count == 1) {echo "active"; }  ?>" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.9) 100%),url(<?= wp_get_attachment_url( $imgs0 ) ?>)">
 		</div>
+		<?php } ?>
+		
 	</div>
-
-
-
-
-<!-- <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-  <div><h3>1</h3></div>
-</div> -->
-
+</div>
 <!-- INTRO SECTION -->
 <div id="intro" class="section off-scroll">
 	<div class="p-4"></div>
@@ -150,11 +119,8 @@ $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 	<div class="container bg-white mt-5">
 		<h1 class="mx-3 text-center titulos py-3 bg-secondary border border-gray"><?= the_title( '', '', true );  ?></h1>
 		<div class="row mx-3 py-3 justify-content-center">
-
 			<?= get_the_content( null, false ); ?>
-
 		</div>
-
 	</div>
 </div>
 <!-- SECTION -->
