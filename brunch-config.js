@@ -17,8 +17,8 @@ module.exports = {
     files: {
         javascripts: {
             joinTo: {
-                'scripts/sitio.js': /^app/,
-                'scripts/vendor.js': /^(?!app)/
+                'scripts/vendor.js': /^node_modules/,
+                'scripts/sitio.js': /^app/
             }
         },
         stylesheets: {

@@ -10,7 +10,6 @@
     "build": "brunch build --production "
   },
   "dependencies": {
-    "ResponsiveSlides.js": "https://github.com/cattanich/ResponsiveSlides.js.git",
     "aos": "^2.3.4",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
@@ -22,9 +21,7 @@
     "auto-reload-brunch": "^2",
     "autoprefixer": "^9.4.7",
     "brunch": "^2",
-    "library-brunch": "^1.2.0",
     "postcss-brunch": "^2.10.1",
-    "sass-brunch": "^2.10.8",
-    "uglify-js-brunch": "^2"
+    "sass-brunch": "^2.10.8"
   }
 }
