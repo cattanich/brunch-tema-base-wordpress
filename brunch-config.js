@@ -44,7 +44,15 @@ module.exports = {
         },
         css: {
             modules: true
+        },
+        assetsmanager: {
+            copyTo: {
+                'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*']
+            }
         }
+
+
+
     }
 
 

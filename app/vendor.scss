@@ -1,5 +1,13 @@
-/*@import "node_modules/slick-carousel/slick/slick.scss";*/
-/*@import "node_modules/slick-carousel/slick/slick-theme.css";*/
+// @import "node_modules/slick-carousel/slick/slick.scss";
+// @import "node_modules/slick-carousel/slick/slick-theme.scss";
+
+// FONTAWESOME
+$fa-font-path: './fonts';
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
 
 .carousel-item {
   height: 100vh;
