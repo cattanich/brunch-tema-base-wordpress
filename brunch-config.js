@@ -39,7 +39,7 @@ module.exports = {
     plugins: {
         postcss: {
             processors: [
-                require('autoprefixer')(['last 8 versions']),
+                require('autoprefixer')(['last 5 versions']),
             ]
         },
         css: {
