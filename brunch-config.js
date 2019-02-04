@@ -38,6 +38,9 @@ module.exports = {
     },
     plugins: {
         postcss: {
+            options: {
+                parser: require('postcss-scss'),
+            },
             processors: [
                 require('autoprefixer')(['last 5 versions']),
             ]
