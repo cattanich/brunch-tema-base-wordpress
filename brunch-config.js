@@ -42,16 +42,15 @@ module.exports = {
                 parser: require('postcss-scss'),
             },
             processors: 
-                require('autoprefixer')(['last 5 versions']),
-
+                require('autoprefixer')(['last 8 versions'])
         },
         cleancss: {
             specialComments: 0,
             removeEmpty: true
         },
-        css: {
-            modules: true
-        },
+        // css: {
+        //     modules: true
+        // },
         assetsmanager: {
             copyTo: {
                 'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*']
