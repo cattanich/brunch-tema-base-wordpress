@@ -41,8 +41,11 @@ module.exports = {
             options: {
                 parser: require('postcss-scss'),
             },
-            processors: 
-                require('autoprefixer')(['last 8 versions'])
+            processors: require('autoprefixer')(['last 8 versions'])
+        },
+        browserSync: {
+            proxy: "http://localhost/wpnewparcel/",
+            // logLevel: "debug"
         },
         cleancss: {
             specialComments: 0,

@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "assetsmanager-brunch": "^1.8.1",
-    "auto-reload-brunch": "^2",
     "autoprefixer": "^9.4.7",
+    "browser-sync-brunch": "^0.0.9",
     "brunch": "^2",
     "clean-css-brunch": "^2.10.0",
     "postcss-brunch": "^2.10.1",
