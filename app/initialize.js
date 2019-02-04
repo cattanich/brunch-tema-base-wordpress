@@ -102,18 +102,32 @@ $.scrollify({
 // });
 
 
-$('#intro-fixed').slick({
-centerMode:true,
-    // slidesToShow: 1,
-    // slidesToScroll: 3,
-    dots: false,
-    arrows: false,
-    infinite: true,
-    // fade: true,
-    autoplay: true,
-    cssEase: 'linear',
-    variableWidth: true,
-    variableHeight: true
+// $('#intro-fixed').slick({
+// centerMode:true,
+//     // slidesToShow: 1,
+//     // slidesToScroll: 3,
+//     dots: false,
+//     arrows: false,
+//     infinite: true,
+//     fade: true,
+//     autoplay: true,
+//     cssEase: 'linear',
+//     variableWidth: true,
+//     variableHeight: true
+// });
+
+// $('#intro-fixed').slick({
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     // fade: true,
+//     arrows: false
+// });
+
+
+
+$('#intro-fixed').carousel({
+  interval: 6000,
+  pause: false
 });
 
 $('#search').on('show.bs.collapse', function() { $('.esconder').addClass('d-none'); });

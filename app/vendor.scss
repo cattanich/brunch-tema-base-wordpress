@@ -1,2 +1,12 @@
 @import "node_modules/slick-carousel/slick/slick.scss";
-/*@import "node_modules/slick-carousel/slick/slick-theme.scss";*/
+/*@import "node_modules/slick-carousel/slick/slick-theme.css";*/
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
