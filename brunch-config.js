@@ -1,19 +1,9 @@
 // See http://brunch.io for documentation.
 
-// exports.files = {
-//   javascripts: {joinTo: 'sitio.js'},
-//   stylesheets: {joinTo: 'sitio.css'}
-// };
-
 module.exports = {
     paths: {
         public: '.'
     },
-    // npm: {
-    //     styles: {
-    //         slick: ["slick/slick.css"]
-    //     },
-    // },
     files: {
         javascripts: {
             joinTo: {
@@ -62,10 +52,5 @@ module.exports = {
                 'images': ['node_modules/preloader-js/assets/images/*']
             }
         }
-
-
-
     }
-
-
 };
