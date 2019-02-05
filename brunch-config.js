@@ -44,7 +44,8 @@ module.exports = {
             processors: require('autoprefixer')(['last 8 versions'])
         },
         browserSync: {
-            proxy: "http://localhost/digicatt/",
+            proxy: "http://localhost/wpnewparcel/",
+            // proxy: "http://localhost/digicatt/"
             // logLevel: "debug"
         },
         cleancss: {

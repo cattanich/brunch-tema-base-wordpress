@@ -1,9 +1,6 @@
 /*// @import "node_modules/slick-carousel/slick/slick.scss";
 // @import "node_modules/slick-carousel/slick/slick-theme.scss";*/
 
-// PRELOADER
-@import "node_modules/preloader-js/assets/css/preloader";
-
 // FONTAWESOME
 $fa-font-path: './fonts';
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -11,7 +8,7 @@ $fa-font-path: './fonts';
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
-
+// FULL PAGE COVER CAROUSEL
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -20,4 +17,109 @@ $fa-font-path: './fonts';
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/**
+ * PRELOADER CONTAINER
+ */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 9999;
+  height: 100%;
+  -moz-animation-duration: 500ms;
+  -webkit-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;  
+}
+
+.preloader.fade-out {
+  -moz-animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+  -ms-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/**
+ * Keyframe animations.
+ */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/**
+ * Animation holder.
+ */
+
+.animation {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -170px 0 0 -100px;
+}
+
+/**
+ * Animation definitions.
+ */
+
+.animation-rotating-square {
+  background: url('../images/rotating-square.gif') no-repeat center center;
+}
+
+.animation-color-wheel {
+  background: url('../images/color-wheel.svg') no-repeat center center;
+}
+
+.animation-lego {
+  background: url('../images/lego.gif') no-repeat center center;
+  background-size: 310px 230px;
+  top: 55%;
 }
