@@ -16,6 +16,9 @@ $servicios = get_posts($args);
 // Llamar imagenes meta de posts section
 $images0 = get_post_meta ( $servicios[0]->ID, 'imgslides', false);
 ?>
+<div class="preloader">
+  <div class="animation animation-rotating-square"></div>
+</div>
 <!-- INTRO FIXED POSITION -->
 <div id="intro-fixed" class="carousel slide carousel-fade" style="z-index: -1" >
 	<div class="carousel-inner position-fixed " role="listbox">

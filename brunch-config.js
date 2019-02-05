@@ -44,7 +44,7 @@ module.exports = {
             processors: require('autoprefixer')(['last 8 versions'])
         },
         browserSync: {
-            proxy: "http://localhost/wpnewparcel/",
+            proxy: "http://localhost/digicatt/",
             // logLevel: "debug"
         },
         cleancss: {
@@ -56,7 +56,8 @@ module.exports = {
         // },
         assetsmanager: {
             copyTo: {
-                'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*']
+                'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*'],
+                'images': ['node_modules/preloader-js/assets/images/*']
             }
         }
 

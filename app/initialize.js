@@ -4,11 +4,11 @@
 // import 'slick-carousel/slick/slick.css'
 
 const $ = require('jquery');
-
+var preloader = require('preloader-js');
 var bootstrap = require('bootstrap');
 var AOS = require('aos');
 var scrollify = require('jquery-scrollify');
-// var slick = require('slick-carousel');
+
 
 // window.jQuery = $;
 
@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('Initialized app');
   // do your setup here
 
-
+// Hides the preloader with a fade out animation.
+preloader.hide();
+// Shows the preloader.
+preloader.show();
 
   $('[data-toggle="tooltip"]').tooltip();
 
@@ -43,18 +46,6 @@ $.scrollify({
   $(".off-scroll", function(){ 
   $.scrollify.disable()
 });  
-
-// // $(function() {
-//     $('[data-toggle="tooltip"]').tooltip();
-// // });
-
-
-
-// ///// JS
-// import jquery from "jquery-commonjs";
-// import aos from "aos";
-// import fakeloader from "../node_modules/fakeLoader.js/fakeLoader.js";
-
 
 
 
