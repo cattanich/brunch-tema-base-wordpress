@@ -6,7 +6,7 @@
   "author": "Christian <cattanich@digicatt.com.ec>",
   "license": "MIT",
   "scripts": {
-    "start": "brunch watch --server",
+    "start": "brunch watch",
     "build": "brunch build --production "
   },
   "dependencies": {
@@ -22,7 +22,7 @@
   "devDependencies": {
     "assetsmanager-brunch": "^1.8.1",
     "autoprefixer": "^9.4.7",
-    "browser-sync-brunch": "^0.0.9",
+    "brunch-browser-sync": "^0.1.2",
     "brunch": "^2",
     "clean-css-brunch": "^2.10.0",
     "postcss-brunch": "^2.10.1",
