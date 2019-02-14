@@ -2,7 +2,7 @@
 /**
  * functions and definitions
  *
- * @package Go Galapagos
+ * @package DigiCatt Media
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
