@@ -4,11 +4,16 @@ module.exports = {
     paths: {
         public: '.'
     },
+    // npm: {
+    //     globals: {
+    //         $: 'jquery'
+    //     }
+    // },
     files: {
         javascripts: {
             joinTo: {
-                'scripts/vendor.js': /^node_modules/,
-                'scripts/sitio.js': /^app/
+                'scripts/sitio.js': /^app/,
+                'scripts/vendor.js': /^node_modules/
             }
         },
         stylesheets: {
@@ -34,10 +39,11 @@ module.exports = {
             processors: require('autoprefixer')(['last 8 versions'])
         },
         browserSync: {
-            proxy: "http://localhost/wpnewparcel/",
-            // proxy: "http://localhost/digicatt/",
+            // proxy: "http://localhost/wpnewparcel/",
+            server: false,
+            proxy: "http://localhost/itin",
             // logLevel: "debug",
-            port: 8888
+            port: 9000
         },
         cleancss: {
             specialComments: 0,
