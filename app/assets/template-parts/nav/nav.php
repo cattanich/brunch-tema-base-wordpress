@@ -52,15 +52,15 @@ if ( !defined( 'ABSPATH' ) ) {
       <div class="collapse navbar-collapse mx-auto w-auto justify-content-center rounded" id="navbarNavAltMarkup">
         <div>
     <?php
-    wp_nav_menu( array(
-      'theme_location'    => 'primary',
-      'container'         => 'div',
-      'container_class'   => 'navbar-collapse',
-      // 'container_id'      => 'bs-example-navbar-collapse-1',
-      'menu_class'        => 'navbar-nav',
-      // 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-      'walker'            => new WP_Bootstrap_Navwalker(),
-    ) );
+    // wp_nav_menu( array(
+    //   'theme_location'    => 'primary',
+    //   'container'         => 'div',
+    //   'container_class'   => 'navbar-collapse',
+    //   // 'container_id'      => 'bs-example-navbar-collapse-1',
+    //   'menu_class'        => 'navbar-nav',
+    //   // 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+    //   'walker'            => new WP_Bootstrap_Navwalker(),
+    // ) );
     ?>
   </div>
   </div>

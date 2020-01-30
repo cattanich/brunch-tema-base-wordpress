@@ -41,7 +41,7 @@ module.exports = {
         browserSync: {
             // proxy: "http://localhost/wpnewparcel/",
             server: false,
-            proxy: "http://localhost/itin",
+            proxy: "http://testweb.local",
             // logLevel: "debug",
             port: 9000
         },
@@ -55,7 +55,8 @@ module.exports = {
         assetsmanager: {
             copyTo: {
                 'styles/fonts': ['node_modules/@fortawesome/fontawesome-free/webfonts/*'],
-                'images': ['node_modules/preloader-js/assets/images/*']
+                'images': ['node_modules/preloader-js/assets/images/*'],
+                'scripts/vendor': ['node_modules/jquery/dist/jquery.js']                
             }
         }
     }
