@@ -2,5 +2,5 @@
 Brunch.io /Tema base para Wordpress
 
 npm -i -g yarn
-yarn
-yarn start | build
+<p>yarn
+<p>yarn start | build
