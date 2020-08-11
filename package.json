@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
-    "animate.css": "^3.7.2",
+    "animate.css": "^4.1.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
     "hover.css": "^2.3.2",
@@ -26,11 +26,11 @@
     "assetsmanager-brunch": "^1.8.1",
     "autoprefixer": "^9.7.4",
     "brunch": "^3.0.0",
-    "brunch-browser-sync": "^0.1.2",
+    "brunch-browser-sync": "https://github.com/cattanich/browser-sync-brunch",
     "clean-css-brunch": "^3.0.0",
     "postcss-brunch": "^3.0.0",
     "postcss-scss": "^2.0.0",
-    "sass-brunch": "^2.10.8",
+    "sass-brunch": "^3.0.0",
     "uglify-es-brunch": "^1.0.5"
   }
 }
